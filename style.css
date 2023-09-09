@@ -1,0 +1,187 @@
+:root {
+  --padding: 4rem 0 0 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+main {
+  min-height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.regi {
+  flex: 0.1;
+  padding: var(--padding);
+}
+
+.regi h1 {
+  font-size: 2rem;
+}
+
+.sn_label {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.8rem;
+}
+
+.form {
+  flex: 0.9;
+  padding: var(--padding);
+}
+
+.form .student_name {
+  display: flex;
+}
+
+.name_section {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-right: 1rem;
+}
+
+/* data && gender starts here */
+.date_gender {
+  display: flex;
+}
+
+.date {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+.dt {
+  display: flex;
+}
+
+.date_commone {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+}
+
+.commone {
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 15vw;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.5);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address_section {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.address_section .commone {
+  width: 100%;
+}
+.city_state_address {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.city_state {
+  display: flex;
+  flex-direction: column;
+}
+
+.city_state .commone {
+  width: 90%;
+}
+
+.number {
+  display: flex;
+}
+
+.work_number_section,
+.phone_number_section {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 1rem; */
+}
+.work_number_section .commone,
+.phone_number_section .commone {
+  width: 35vw;
+}
+
+.add_comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_comments textarea {
+  width: 90%;
+}
+
+.courses {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit button {
+  background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background-color: green;
+  color: #fff;
+}
+
+@media (max-witdh: 992px) {
+  .commone {
+    width: 8vw;
+  }
+}
+@media (max-witdh: 768px) {
+  .date {
+    flex-direction: row;
+  }
+}
+
+/* data && gender ends here */
